@@ -1,15 +1,21 @@
-provider "aws"{
+provider "aws" {
 
-    region = "eu-north-1"
+  region = "eu-north-1"
 }
 
-resource "aws_instance" "first_instance"{
+resource "aws_instance" "first_instance" {
 
-    ami = "ami-00f34bf9aeacdf007"
-    instance_type = "t3.micro"
+  ami           = "ami-00f34bf9aeacdf007"
+  instance_type = "t3.micro"
 
-    tags = {
-        name = "web-server"
+  tags = {
+    name = "web-server"
 
-    }
-    }
+  }
+}
+
+resource "aws_vpc" "name" {
+
+    
+  
+}
